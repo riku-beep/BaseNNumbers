@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>N進数変換</title>
+ <meta name="description" content="サイトキャプションを入力">
+ <meta name="keywords" content="サイトキーワードを,で区切って入力">
+ <link rel="stylesheet" href="style.css">
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+ <![endif]-->
+
+ </head>
+ 
+ <body>
+
+ <main>
+    
+    <div class="input_form">
+        <h1>変換したい値を入力してください</h1>
+        <div class="unit">
+            <div id="base_n">
+                <label><input type="radio" name="select_n" value="2">2進数</label>
+                <label><input type="radio" name="select_n" value="8" >8進数</label>
+                <label><input type="radio" name="select_n" value="10" checked>10進数</label>
+                <label><input type="radio" name="select_n" value="16">16進数</label>
+            </div>
+            <div class="input_number">
+                <label>変換前の値：<input type="text" id="befor_number" name="befor_number" size=50></label>
+                    <input type="button" value="変換" id="convert_buttun">
+                    <input type="button" value="リセット" id="reset_buttun">
+                <p>(注意)半角で入力してください </p>
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+        
+    <div class="output_form">
+        <h1>変換した値はこちらです</h1>
+        <table class="output_table">
+            <tr>
+                <td>2進数</td><td>:</td>
+                <td><input type="text" id="after_0" size="30"></td>
+                <td><input type="button" value="コピー" onclick="copyToClipboard('after_0')"></td>
+            </tr>
+            <tr>
+                <td>8進数</td><td>:</td>
+                <td><input type="text" id="after_1" size="30"></td>
+                <td><input type="button" value="コピー" onclick="copyToClipboard('after_1')"></td>
+            </tr>
+            <tr>
+                <td>10進数</td><td>:</td>
+                <td><input type="text" id="after_2" size="30"></td>
+                <td><input type="button" value="コピー" onclick="copyToClipboard('after_2')"></td>
+            </tr>
+            <tr>
+                <td>16進数</td><td>:</td>
+                <td><input type="text" id="after_3" size="30"></td>
+                <td><input type="button" value="コピー" onclick="copyToClipboard('after_3')"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="index.js"></script>
+ </main>
+
+ </body>
+</html>

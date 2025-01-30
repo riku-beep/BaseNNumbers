@@ -1,0 +1,31 @@
+.input_form{
+    color:blue;
+    background-color: rgb(205, 255, 255);
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.output_form{
+    color:red;
+    background-color:rgb(255, 228, 228);
+    padding-left: 20px;
+}
+
+.input_number{
+    color:black;
+}
+
+.unit{
+    padding-left: 50px;
+    
+}
+
+.unit li{
+    list-style:none;
+    padding-bottom: 10px;
+}
+.output_table{
+    color:black;
+    padding-left:0
+}
+
